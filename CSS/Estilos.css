@@ -1,0 +1,100 @@
+*{
+    margin: 0; /* margenes totales */
+    padding: 0; /* bordes internos*/
+}
+
+body{
+     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b695df+26,f0f5ab+52,a9f1a9+77 */
+background: #b695df; /* Old browsers */
+background: -moz-linear-gradient(left,  #b695df 26%, #f0f5ab 52%, #a9f1a9 77%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #b695df 26%,#f0f5ab 52%,#a9f1a9 77%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #b695df 26%,#f0f5ab 52%,#a9f1a9 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b695df', endColorstr='#a9f1a9',GradientType=1 ); /* IE6-9 */
+}
+
+header{
+    max-width: 1000px;
+    min-height: 130px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+    background: rgb(29, 27, 27);
+
+}
+
+.logo {
+    float: left;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.menu-h {
+    max-width: 1000px;
+    min-height: 50px;
+    margin: 0 auto;
+    background: black
+}
+
+.menu-h ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-h a{
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 18px;
+}
+
+.menu-h ul ul {
+    display: none;
+    position: absolute;
+}
+
+.menu-h ul li:hover ul{
+    display:block;
+}
+.menu-h a:hover{
+    color: rgb(228, 15, 15);
+}
+.banner {
+    max-width: 1000px;
+    min-height: 250px;
+    margin: 0 auto;
+    background: rgb(75, 68, 68);
+}
+
+.contenedor{
+    max-width: 1000px;
+    min-height: 700px;
+    margin: 0 auto;
+    background: white;
+}
+
+.menu-v{
+    width: 300px;
+    min-height: 700px;
+    margin: 0 auto;
+    background: rgb(94, 93, 93);
+    float: left;
+}
+
+.contenido {
+    width: 300px;
+    min-height: 700px;
+    margin: 0 auto;
+    background: rgb(47, 25, 73);
+    float: right;
+}
+
+footer{
+    max-width: 1000px;
+    min-height: 130px;
+    margin: 0 auto;
+    border-radius: 0px 0px 20px 20px;
+    background: rgb(2, 1, 1);
+}
