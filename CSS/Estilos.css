@@ -25,6 +25,7 @@ header{
     float: left;
     margin-top: 15px;
     margin-left: 20px;
+    animation: 1s entrada 1;
 }
 
 .menu-h {
@@ -65,8 +66,7 @@ header{
     max-width: 1000px;
     min-height: 250px;
     margin: 0 auto;
-    background: rgb(75, 68, 68);
-}
+    }
 
 .contenedor{
     max-width: 1000px;
@@ -79,16 +79,57 @@ header{
     width: 300px;
     min-height: 700px;
     margin: 0 auto;
-    background: rgb(94, 93, 93);
+    background: black;
     float: left;
 }
 
+.menu-v ul{
+    list-style: none;
+    }
+
+.menu-v a{
+    color: white;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background: rgb(0, 0, 0);
+    font-family: Arial;
+    font-size: 18px;
+    border: 1px solid white;
+}
+
+.menu-v a:hover{
+    background: red;
+}
+
+.menu-v a:hover img{
+    animation: 1s rotacion 1;
+}
+
 .contenido {
-    width: 300px;
+    width: 650px;
     min-height: 700px;
     margin: 0 auto;
-    background: rgb(47, 25, 73);
     float: right;
+}
+
+.contenido h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.contenido p{
+    margin-left: 10px;
+    margin-right: 20px ;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.imagnepequeña {
+    float: left;
+    padding: 10px;
 }
 
 footer{
@@ -97,4 +138,23 @@ footer{
     margin: 0 auto;
     border-radius: 0px 0px 20px 20px;
     background: rgb(2, 1, 1);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+@keyframes entrada{
+    0%{
+        transform: translateY(-200px);
+    }
+
+}
+
+@keyframes rotacion{
+    0%{
+        transform: rotate(270deg);
+    }
 }
